@@ -1,0 +1,85 @@
+.theme_bg{
+	background-color: darkslateblue;
+}
+.button_grey{
+	background-color: rgba(108,111,114,0.3);
+	color:rgba(255,255,255,1);
+}
+#hero .jumbotron {
+	background: url("computer.jpeg");
+	background-size: cover;
+	height: 850px;
+	text-align: center;
+	padding: 23%;
+}
+
+#hero .jumbotron h1 {
+	color: white;
+
+}
+#hero .jumbotron p {
+	color: lightgrey;
+}
+
+#about-us .row {
+	margin-bottom: 20px;
+
+}
+#feature {
+	background-color: rgb(238,242,245);
+	color: rgb(101,123, 142);
+	text-align: center;
+	padding: 20px;
+	border: 2px rgb(233,233,233) solid;
+}
+
+#price, #teams, #contact-us {
+	padding: 20px;
+	text-align: center;
+}
+
+#price thead {
+	color: white;
+}
+#price thead .red {
+	background-color: rgb(225,75, 108);
+
+}
+
+#price thead .blue {
+	background-color: rgb(70,199, 224);
+}
+
+#price thead .green {
+	background-color: rgb(123,209, 191);
+}
+
+#price tbody .red {
+background-color: rgb(233,92, 121);
+color: white;
+font-size:  1.4em;
+font-weight: bold;
+}
+
+#price tbody .blue {
+	background-color: rgb(89,208, 233);
+	color: white;
+	font-size:  1.4em;
+	font-weight: bold;
+}
+
+#price tbody .green {
+	background-color: rgb(133,220, 202);
+	color: white;
+	font-size:  1.4em;
+	font-weight: bold;
+	
+}
+.img-size {
+	width: 250px;
+}
+
+footer {
+	background-color: rgb(25,25,25);
+color:white;
+}
