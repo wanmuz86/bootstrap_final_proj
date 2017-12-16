@@ -9,6 +9,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark theme_bg">
@@ -45,7 +48,7 @@
   </div>
 </nav>
 <section id="hero">
-  <div class="jumbotron">
+  <div class="jumbotron jumbotron-fluid">
   <h1 class="display-3">Common Room</h1>
   <p class="lead">Drink, Work, Stay and Learn!</p>
 
@@ -223,20 +226,33 @@
 </form>
 </div>
 </section>
+<section id="find-us">
+  <div class="container">
+  <h2>Find Us</h2>
+  <div id="map"></div>
+  </div>
+  </section>
 <footer>
   <div class="container">
+    <div class="row">
     <div class="col-md-6">
+      <p>
       Asia Developer Academy Training Address: VSQ @ PJ City Centre,<br/>
-      
-Block 2, 13th Floor, Jalan Utara Section 14,<br/>
-46200 Petaling Jaya, Selangor, Malaysia.<br/>
-Call for Info: +603-7947 2200
-
+      Block 2, 13th Floor, Jalan Utara Section 14,<br/>
+      46200 Petaling Jaya, Selangor, Malaysia.<br/>
+      Call for Info: +603-7947 2200
+      </p>
+&copy; 2017 Wan Muzaffar Wan Hashim
 
       
     </div>
     <div class="col-md-6">
-      
+      <ul class="list-inline">
+        <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
+        <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
+        <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+      </ul>
+
     </div>
   </div>
 
@@ -247,5 +263,21 @@ Call for Info: +603-7947 2200
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+     <script>
+      function initMap() {
+        var uluru = {lat: 2.982921, lng: 101.667290};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO6aR5WOa00QqYQnITmXajLsfZLVDa0W0&callback=initMap">
+    </script>
   </body>
 </html>
